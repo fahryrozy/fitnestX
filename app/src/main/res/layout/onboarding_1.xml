@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/onboarding_1_illustration"
+            android:id="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:contentDescription="@string/onboarding_1_illustration"
+            android:layout_marginTop="-10dp"/>
+    <TextView
+            android:text="@string/onboarding_1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txTitleOnBoarding1"
+            android:layout_marginTop="31dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp" android:textSize="18sp" android:textStyle="bold"/>
+    <TextView
+            android:text="@string/onboarding_1_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txDescOnboarding1"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/txTitleOnBoarding1" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            android:paddingEnd="30dp"/>
+    <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp" android:id="@+id/btnNext"
+            android:layout_marginEnd="20dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/btn_next_onboard_1" android:textSize="30sp"
+            android:onClick="toOnboard2" android:layout_marginBottom="20dp" android:contentDescription="@string/blank"
+            android:text="@string/next_arrow" android:width="60dp" android:height="60dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_linear"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txLogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/txLogo" android:textSize="36sp"
+            app:layout_constraintVertical_bias="0.409" app:layout_constraintHorizontal_bias="0.415"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="@string/company_motto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txMotto"
+            app:layout_constraintTop_toBottomOf="@+id/txLogo"
+            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="18sp" android:textColor="#303F9F"/>
+    <Button
+            android:text="@string/txbtnGetStarted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/btnGetStarted"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="68dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:ellipsize="middle" android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" app:cornerRadius="20dp" android:onClick="toOnboard1"
+            android:textAllCaps="false" app:backgroundTint="@color/white" android:textColor="#1976D2"/>
+    <TextView
+            android:text="@string/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/txLogo" android:textSize="70sp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="252dp" android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
